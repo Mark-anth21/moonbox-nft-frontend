@@ -1,0 +1,9 @@
+<section class="header">
+    <nav class="fx-space-between">
+
+        <ul class="fx">
+            <li *ngFor="let item of navItems"><a [class.pri-btn]="item?.class == 'pri'"
+                    [routerLink]="[item.path]">{{item.name}}</a></li>
+        </ul>
+    </nav>
+</section>

@@ -1,0 +1,144 @@
+*:focus {
+    outline   : none;
+}
+  
+html, body {
+    margin    : 0;
+    padding   : 0;
+    width     : $full;
+    height    : $full;
+}
+  
+body {
+    background-color : $body-bg-color;
+    font-family      : $font-family-base;
+    font-weight      : $font-weight-base;
+    letter-spacing   : $letter-spacing-base;
+    color            : $font-color-base;
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.logo-small {
+    height  : 50px;
+}
+
+.logo-medium {
+    height  : 120px;
+}
+
+.logo-large {
+    height  : 220px;
+}
+
+.fx {
+    display: flex;
+}
+
+.fx-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.fx-center {
+    @extend %flex-center;
+}
+
+.fx-center-col {
+    @extend %flex-center-col;
+}
+
+.fx-space-between {
+    @extend %flex-space-between;
+}
+
+.w20px {
+    font-size: 20px;
+    color: white;    
+}
+
+.wf {
+    color: white;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.p12 {
+    font-size: 12px;
+}
+
+.p16 {
+    font-size: 16px;
+}
+
+.p20 {
+    font-size: 20px;
+}
+
+.p22 {
+    font-size: 22px;
+}
+
+.p40 {
+    font-size: 40px;
+}
+
+.w300 {
+    font-weight: 300;
+}
+
+.w700 {
+    font-weight: 700;
+}
+
+.w800 {
+    font-weight: 800;
+}
+
+.white {
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.round-btn {
+    display: block;
+    background-color: $primary;
+    height: fit-content;
+    width: fit-content;
+    padding: 15px 15px;
+    border-radius: 25px;
+    color: white;
+    font-weight: $semi-bold;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        color: $secondary;
+    }
+}
+
+.outline-btn {
+    display: block;
+    padding: 15px 15px;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 25px;
+    border: 1px solid $primary;
+    color: $primary;
+    font-weight: $semi-bold;
+    cursor: pointer;
+
+    &:hover {
+        color: white;
+    }
+}
