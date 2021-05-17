@@ -4,7 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { NftComponent } from './nft.component';
 import { AboutComponent } from './about/about.component';
-import { PanelComponent } from './panel/panel.component';
+import { InventoryComponent } from './inventory/inventory.component';
+import { HistoryComponent } from './history/history.component';
 
 const routes: Routes = [
     {
@@ -16,8 +17,12 @@ const routes: Routes = [
               component: AboutComponent
           },
           {
-              path: 'panel',
-              component: PanelComponent
+            path: 'history',
+            component: HistoryComponent
+          },
+          {
+              path: 'inventory',
+              component: InventoryComponent
           }
         ]
     }
