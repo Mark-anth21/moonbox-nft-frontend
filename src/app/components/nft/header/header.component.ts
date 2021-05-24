@@ -25,6 +25,10 @@ export class HeaderComponent implements OnInit {
     {
       'name': 'UNLOCK WALLET',
       'path': '#unlock'
+    },
+    {
+      'name': 'MOONTOKEN',
+      'path': '#moontoken'
     }
   ];
 
